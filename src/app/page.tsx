@@ -1,11 +1,16 @@
+"use client"
+import { useState } from "react"
 import { ArrowRight, BarChart3, Calendar, Users, Zap } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import LandingNav from "@/components/landing/landing-nav"
 import LandingFooter from "@/components/landing/landing-footer"
+import { WaitingListModal } from "@/components/waiting-list-modal"
 
 export default function HomePage() {
+  const [waitingListOpen, setWaitingListOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white pt-20">
       {/* Header */}
@@ -23,16 +28,11 @@ export default function HomePage() {
             superior cost estimates and construction schedules in a fraction of the time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link href="/dashboard">
-              <Button size="lg" className="text-lg px-8 py-3">
-                Start For Free
-              </Button>
-            </Link>
-            <Link href="/login">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-3">
-                Log In
-              </Button>
-            </Link>
+           
+            <Button size="lg" onClick={() => setWaitingListOpen(true)} className="text-lg px-8 py-3">
+              Join the Waiting List
+            </Button>
+            
           </div>
 
           {/* Stats */}
@@ -54,7 +54,7 @@ export default function HomePage() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50" id="features">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Complete Construction Intelligence Platform</h2>
@@ -189,6 +189,7 @@ export default function HomePage() {
       </section>
 
       <LandingFooter />
+      <WaitingListModal open={waitingListOpen} onOpenChange={setWaitingListOpen} />
     </div>
   )
 }
