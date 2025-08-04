@@ -20,14 +20,8 @@ export default function LandingNav() {
                 <Link href="/" className="text-gray-600 hover:text-gray-900">
                 Home
                 </Link>
-                <Link href="#features" className="text-gray-600 hover:text-gray-900">
-                Features
-                </Link>
                 <Link href="/solutions" className="text-gray-600 hover:text-gray-900">
                 Solutions
-                </Link>
-                <Link href="/pricing" className="text-gray-600 hover:text-gray-900">
-                Pricing
                 </Link>
                 <Link href="/about" className="text-gray-600 hover:text-gray-900">
                 About

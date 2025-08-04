@@ -69,11 +69,6 @@ export default function HomePage() {
                   <span className="text-gray-700">Win rate for clients</span>
                 </div>
               </div>
-              <Link href="/cost-estimator">
-                <Button size="lg" className="bg-blue-600 hover:bg-black duration-500">
-                  Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
             </div>
             <div className="rounded-lg p-8 text-center flex items-center justify-center">
               <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Proposal acceleration" width={500} height={400} className="object-cover rounded-lg"/>
@@ -104,11 +99,6 @@ export default function HomePage() {
                   <span className="text-gray-700">Query capability</span>
                 </div>
               </div>
-              <Link href="/cost-estimator">
-                <Button size="lg" className="bg-blue-600 hover:bg-black duration-500">
-                  See It In Action <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
@@ -132,11 +122,6 @@ export default function HomePage() {
                   <span className="text-gray-700">In project delays</span>
                 </div>
               </div>
-              <Link href="/cost-estimator">
-                <Button size="lg" className="bg-blue-600 hover:bg-black duration-500">
-                  Explore Forecasting <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
             </div>
             <div className="rounded-lg p-8 text-center flex items-center justify-center">
               <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Forecasting engine" width={500} height={400} className="object-cover rounded-lg"/>
@@ -205,9 +190,6 @@ export default function HomePage() {
                   <span className="text-gray-700">Schedule adjustments</span>
                 </div>
               </div>
-              <Button size="lg" className="bg-blue-600 hover:bg-black duration-500" onClick={() => setWaitingListOpen(true)}>
-                Schedule a Demo <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
             </div>
           </div>
         </div>
@@ -221,11 +203,6 @@ export default function HomePage() {
             Join over 50,000 professionals who are leveraging RiskWise to transform their proposal and schedule management.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://constr-data-innov-neon.vercel.app/">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-3 hover:bg-black hover:text-white duration-500">
-                Start Free Trial
-              </Button>
-            </Link>
             
             <Button
               size="lg"
@@ -233,7 +210,7 @@ export default function HomePage() {
               className="text-lg px-8 py-3 hover:bg-black hover:text-white duration-500"
               onClick={() => setWaitingListOpen(true)}
             >
-              Request a Personalized Demo
+              Join the Waiting List
             </Button>
             
           </div>
