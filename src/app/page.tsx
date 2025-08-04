@@ -87,7 +87,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Proposal acceleration" width={500} height={400} className="object-cover rounded-lg"/>
+              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Conversational AI" width={500} height={400} className="object-cover rounded-lg"/>
             </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Have Real Conversations With Your Data</h2>
@@ -139,7 +139,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Proposal acceleration" width={500} height={400} className="object-cover rounded-lg"/>
+              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Forecasting engine" width={500} height={400} className="object-cover rounded-lg"/>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Proposal acceleration" width={500} height={400} className="object-cover rounded-lg"/>
+              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="AI Schedule Optimization" width={500} height={400} className="object-cover rounded-lg"/>
             </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Smart Schedule Optimization</h2>

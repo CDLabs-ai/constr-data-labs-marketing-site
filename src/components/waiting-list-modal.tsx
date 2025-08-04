@@ -169,8 +169,6 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
             <span>Special launch pricing and discounts</span>
           </div>
         </div>
-
-        <p className="text-xs text-gray-500 text-center mt-4">We respect your privacy. Unsubscribe at any time.</p>
       </DialogContent>
     </Dialog>
   )
