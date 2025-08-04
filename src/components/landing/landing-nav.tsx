@@ -33,7 +33,7 @@ export default function LandingNav() {
                 About
                 </Link>
             </nav>
-            <Button onClick={() => setWaitingListOpen(true)} className="bg-blue-600 hover:bg-blue-700">
+            <Button onClick={() => setWaitingListOpen(true)} className="bg-blue-600 duration-500">
                 Join the Waiting List
             </Button>
             </div>
