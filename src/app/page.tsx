@@ -1,8 +1,6 @@
 "use client"
 import { useState } from "react"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import LandingNav from "@/components/landing/landing-nav"
 import LandingFooter from "@/components/landing/landing-footer"

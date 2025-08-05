@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { WaitingListModal } from "@/components/waiting-list-modal"
 import Link from "next/link"
-import { ArrowRight, Users, Calculator, HardHat, Building } from "lucide-react"
+import {  Users, Calculator, HardHat, Building } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import LandingNav from "@/components/landing/landing-nav"
 import LandingFooter from "@/components/landing/landing-footer"
