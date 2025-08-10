@@ -32,7 +32,7 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
     // Handle form submission here
     console.log("Waiting list submission:", formData)
     const { error } = await supabase.from("waitlist").insert([{
-      full_name: formData.name,
+      name: formData.name,
       email: formData.email,
       company: formData.company,
       phone: formData.phone 
