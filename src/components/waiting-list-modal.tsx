@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { Mail, User, Building, CheckCircle, Phone } from "lucide-react"
+import { createClient } from "@/lib/supabase/client"
 
 interface WaitingListModalProps {
   open: boolean
@@ -24,10 +25,23 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
     phone: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const supabase = createClient();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission here
     console.log("Waiting list submission:", formData)
+    const { error } = await supabase.from("waitlist").insert([{
+      full_name: formData.name,
+      email: formData.email,
+      company: formData.company,
+      phone: formData.phone 
+    }])
+
+    if (error) {
+      console.error("Error inserting to waitlist: ", error);
+      return;
+    }
     setIsSubmitted(true)
 
     // Reset form after 3 seconds and close modal
