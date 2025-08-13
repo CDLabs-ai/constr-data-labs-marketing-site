@@ -199,9 +199,10 @@ export default function SolutionsPage() {
         {/* CTA Section */}
         <section className="py-20 px-4 bg-blue-600">
             <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Start Optimizing Your Proposals Today</h2>
+            <h2 className="text-4xl font-bold text-white mb-6">Elevate Your Construction Planning Today
+</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join over 50,000 professionals who are leveraging RiskWise to transform their proposal and schedule management.
+                Join other innovative construction companies who are leveraging RiskWise&apos;s vertical AI to generate better cost estimates and construction schedules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 
