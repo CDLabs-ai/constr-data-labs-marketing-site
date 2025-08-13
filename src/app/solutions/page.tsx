@@ -15,7 +15,7 @@ export default function SolutionsPage() {
         <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
             <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
-                Created for Every Builder by Builders
+                Created for Every Builder by Builders 
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto m-4">
                 Go from unstructured files and takeoffs to comprehensive, detailed cost estimates and Gannt chart schedules in minutes
