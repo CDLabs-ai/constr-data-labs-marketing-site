@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import LandingNav from "@/components/landing/landing-nav"
 import LandingFooter from "@/components/landing/landing-footer"
@@ -90,9 +89,20 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Proposal acceleration" width={500} height={400} className="object-cover rounded-lg"/>
-            </div>
+            <div className="bg-gray-100 rounded-xl p-6 shadow-inner">
+                <div className="aspect-video bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="p-4">
+                      <div className="p-4">
+                      <div className="h-8 bg-blue-100 rounded-md w-1/3 mb-4"></div>
+                      <div className="grid grid-cols-2 gap-4 mb-4">
+                          <div className="h-32 bg-red-50 rounded-md"></div>
+                          <div className="h-32 bg-yellow-50 rounded-md"></div>
+                      </div>
+                      <div className="h-24 bg-blue-50 rounded-md w-full"></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
           </div>
         </div>
       </section>
@@ -101,13 +111,22 @@ export default function HomePage() {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-            <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Conversational AI" width={500} height={400} className="object-cover rounded-lg"/>
-            </div>
+            <div className=" bg-white rounded-xl p-6 shadow-lg">
+                <div className="aspect-video bg-white rounded-lg overflow-hidden">
+                    <div className="p-4">
+                    <div className="h-8 bg-blue-100 rounded-md w-1/3 mb-4"></div>
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                        <div className="h-32 bg-blue-50 rounded-md"></div>
+                        <div className="h-32 bg-green-50 rounded-md"></div>
+                    </div>
+                    <div className="h-24 bg-gray-100 rounded-md w-full"></div>
+                    </div>
+                </div>
+                </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Construction Schedule Optimization</h2>
               <p className="text-lg text-gray-600 mb-8">
-               Leverage our intelligence platform to create and optimize construction schedules based on your company’s historical data. Model your timelines, resource needs, and potential risks before making decisions.
+               Leverage our intelligence platform to create and optimize construction schedules based on your company&apos;s historical data. Model your timelines, resource needs, and potential risks before making decisions.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
@@ -143,9 +162,18 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Forecasting engine" width={500} height={400} className="object-cover rounded-lg"/>
-            </div>
+            <div className="bg-gray-100 rounded-xl p-6 shadow-inner">
+                <div className="aspect-video bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="p-4">
+                    <div className="h-8 bg-blue-100 rounded-md w-1/3 mb-4"></div>
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                        <div className="h-32 bg-blue-50 rounded-md"></div>
+                        <div className="h-32 bg-green-50 rounded-md"></div>
+                    </div>
+                    <div className="h-24 bg-gray-100 rounded-md w-full"></div>
+                    </div>
+                </div>
+                </div>
           </div>
         </div>
       </section>
