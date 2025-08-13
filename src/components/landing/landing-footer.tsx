@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react"
+import { ChartColumn} from "lucide-react"
 import Link from "next/link"
 
 export default function LandingFooter() {
@@ -8,7 +8,7 @@ export default function LandingFooter() {
        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
          <div>
            <div className="flex items-center space-x-2 mb-4">
-             <Shield className="h-6 w-6 text-blue-400" />
+             <ChartColumn className="h-6 w-6 text-blue-400" />
              <span className="text-xl font-bold">RiskWise</span>
            </div>
            <p className="text-gray-400">AI-powered construction planning and cost estimation platform.</p>
@@ -36,7 +36,7 @@ export default function LandingFooter() {
          </div>
        </div>
        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-         <p>&copy; 2024 RiskWise. All rights reserved.</p>
+         <p>&copy; 2025 RiskWise. All rights reserved.</p>
        </div>
      </div>
    </footer>   
