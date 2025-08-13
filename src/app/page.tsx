@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import LandingNav from "@/components/landing/landing-nav"
 import LandingFooter from "@/components/landing/landing-footer"
 import { WaitingListModal } from "@/components/waiting-list-modal"
+import {ChartColumn, CalendarCheck2, User} from "lucide-react" 
 
 export default function HomePage() {
   const [waitingListOpen, setWaitingListOpen] = useState(false)
@@ -16,12 +17,11 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Revolutionize Construction Planning with{" "}
-            <span className="text-blue-600">AI-Powered Cost and Schedule Intelligence</span>
+            Intelligent Bid Estimation and Schedule Planning{" "}
+            <span className="text-blue-600">for the Construction Industry</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Upload your historical documents, connect to your existing apps, and leverage our vertical AI to generate
-            superior cost estimates and construction schedules in a fraction of the time.
+            Upload your historical documents, connect to your existing apps, and access AI-powered construction solutions – all in one platform
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
            
@@ -33,27 +33,49 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50,000+</div>
-              <div className="text-gray-600">Construction professionals</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">90%</div>
+              <div className="text-gray-600">Time saved generating bids</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">2.5M+</div>
-              <div className="text-gray-600">Construction schedules optimized</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">25%</div>
+              <div className="text-gray-600">Increase in bid win rates</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">750K+</div>
-              <div className="text-gray-600">Cost estimates generated</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">30%</div>
+              <div className="text-gray-600">Reduction in costly errors</div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">Company Logos</div>
+        </div>
+      </section>
+      <section className="py-20 px-4 bg-gray-100">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center m-12 text-3xl md:text-4xl font-semibold">Complete Construction Intelligence Platform</div>
+        <p className="text-2xl text-center text-gray-600 mb-8 max-w-3xl mx-auto">From initial planning to project completion, RiskWise provides AI-powered solutions for your numeric bid & schedule data </p>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <ChartColumn className="h-12 w-12 text-blue-600"/>
+              <div className="text-xl font-semibold my-2">Cost Estimates</div>
+              <p className="text-gray-600">AI-powered cost breakdowns with risk analysis and optimization suggestions</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <CalendarCheck2 className="h-12 w-12 text-blue-600"/>
+              <div className="text-xl font-semibold my-2">Schedules</div>
+              <p className="text-gray-600">No more manually typing schedule activities in P6 or MS Project with complicated WBS, dependencies, and resources. Streamline critical path scheduling and then query your schedule.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <User className="h-12 w-12 text-blue-600"/>
+             <div className="text-xl font-semibold my-2">Forecasting</div>
+              <p className="text-gray-600">Predictive analytics in a whole new light</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gray-100">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Accelerate Proposal Creation</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Generate High Quality Cost Estimates</h2>
               <p className="text-lg text-gray-600 mb-8">
                 Transform your proposal process with RiskWise&apos;s advanced AI engine. Generate comprehensive, tailored proposals in minutes instead of days.
               </p>
@@ -75,7 +97,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-gray-100">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -83,18 +105,18 @@ export default function HomePage() {
               <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Conversational AI" width={500} height={400} className="object-cover rounded-lg"/>
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Have Real Conversations With Your Data</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Construction Schedule Optimization</h2>
               <p className="text-lg text-gray-600 mb-8">
-                RiskWise&apos;s conversational AI allows you to interact with your project data naturally. Ask questions, get insights, and make decisions faster than ever before.
+               Leverage our intelligence platform to create and optimize construction schedules based on your company’s historical data. Model your timelines, resource needs, and potential risks before making decisions.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">15,000+</div>
-                  <span className="text-gray-700">Data sources integrated</span>
+                  <div className="text-2xl font-bold text-blue-600 mb-2">95% accuracy</div>
+                  <span className="text-gray-700">In timeline predictions</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">Natural language</div>
-                  <span className="text-gray-700">Query capability</span>
+                  <div className="text-2xl font-bold text-blue-600 mb-2">40% reduction</div>
+                  <span className="text-gray-700">In project delays</span>
                 </div>
               </div>
             </div>
@@ -102,22 +124,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gray-100">
+      <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Proprietary Forecasting Engine</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Seamless Integration & Actionable Insights</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Leverage our industry-leading AI forecasting engine to predict project timelines, resource needs, and potential risks with unprecedented accuracy.
+                Connect to your existing apps and pull your relevant construction data into one place. Get actionable insights through RiskWise&apos;s conversational chat to make better decisions, based on your company&apos;s own job histories 
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">97% accuracy</div>
-                  <span className="text-gray-700">In timeline predictions</span>
+                  <div className="text-2xl font-bold text-blue-600 mb-2">Multiple Integrations</div>
+                  <span className="text-gray-700">With popular construction apps</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">40% reduction</div>
-                  <span className="text-gray-700">In project delays</span>
+                  <div className="text-2xl font-bold text-blue-600 mb-2">Actionable insights</div>
+                  <span className="text-gray-700">From all your historical bid and project data</span>
                 </div>
               </div>
             </div>
@@ -128,7 +150,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-gray-100">
         <div className="container mx-auto">
           <div className="flex justify-center items-center">
              <h2 className="text-4xl font-bold text-gray-900 mb-10">How to Get Started</h2>
@@ -140,55 +162,28 @@ export default function HomePage() {
               </div>
               <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Start for free</h2>
               <p className="text-lg text-gray-600 mb-8 text-center">
-                Sign up and use RiskWise as your trusted, daily proposal and schedule management platform.
+                Sign up and be first on the waitlist to use RiskWise as your trusted, daily cost proposal and schedule management platform. 
               </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-[60px] h-[60px] text-2xl font-bold bg-blue-600 text-white rounded-full flex items-center justify-center mb-4">
                 2
               </div>
-              <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Optimize with ease</h2>
+              <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Connect & upload</h2>
               <p className="text-lg text-gray-600 mb-8 text-center">
-                Generate proposals, optimize schedules, and have conversations with your data using our AI.
+                Upload your historical construction files and connect to your existing apps to gain deeper understanding of your data.
               </p>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-[60px] h-[60px] text-2xl font-bold bg-blue-600 text-white rounded-full flex items-center justify-center mb-4">
                 3
               </div>
-              <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Choose a tier</h2>
+              <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Generate & optimize</h2>
               <p className="text-lg text-gray-600 mb-8 text-center max-w-md">
-                Take it to the next level with our advanced features and join thousands of satisfied clients.
+                Create accurate cost estimates and optimized construction schedules with our intelligence platform.
               </p>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-gray-100">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            <div className="rounded-lg p-8 text-center flex items-center justify-center">
-              <Image src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="AI Schedule Optimization" width={500} height={400} className="object-cover rounded-lg"/>
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Smart Schedule Optimization</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Our AI automatically identifies bottlenecks, optimizes resource allocation, and suggests improvements to your project schedules.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">22% increase</div>
-                  <span className="text-gray-700">In resource efficiency</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">Real-time</div>
-                  <span className="text-gray-700">Schedule adjustments</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -196,9 +191,9 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-blue-600">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Start Optimizing Your Proposals Today</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Elevate Your Construction Planning Today</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join over 50,000 professionals who are leveraging RiskWise to transform their proposal and schedule management.
+            Join other innovative construction companies who are leveraging RiskWise&apos;s vertical AI to generate better cost estimates and construction schedules.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             
