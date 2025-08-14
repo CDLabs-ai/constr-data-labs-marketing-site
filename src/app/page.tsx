@@ -48,7 +48,7 @@ export default function HomePage() {
       </section>
       <section className="py-20 px-4 bg-gray-100">
         <div className="flex flex-col sm:flex-row gap-4 justify-center m-12 text-3xl md:text-4xl font-semibold">Complete Construction Intelligence Platform</div>
-        <p className="text-2xl text-center text-gray-600 mb-8 max-w-3xl mx-auto">From initial planning to project completion, RiskWise provides AI-powered solutions for your numeric bid & schedule data </p>
+        <p className="text-2xl text-center text-gray-600 mb-8 max-w-3xl mx-auto">From initial planning to project completion, ConstructWise provides AI-powered solutions for your numeric bid & schedule data </p>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
@@ -76,7 +76,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Generate High Quality Cost Estimates</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Transform your proposal process with RiskWise&apos;s advanced AI engine. Generate comprehensive, tailored proposals in minutes instead of days.
+                Transform your proposal process with ConstructWise&apos;s advanced AI engine. Generate comprehensive, tailored proposals in minutes instead of days.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
@@ -149,7 +149,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Seamless Integration & Actionable Insights</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Connect to your existing apps and pull your relevant construction data into one place. Get actionable insights through RiskWise&apos;s conversational chat to make better decisions, based on your company&apos;s own job histories 
+                Connect to your existing apps and pull your relevant construction data into one place. Get actionable insights through ConstructWise&apos;s conversational chat to make better decisions, based on your company&apos;s own job histories 
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
@@ -190,7 +190,7 @@ export default function HomePage() {
               </div>
               <h2 className="text-4xl font-semibold text-gray-900 mb-6 text-center">Start for free</h2>
               <p className="text-lg text-gray-600 mb-8 text-center">
-                Sign up and be first on the waitlist to use RiskWise as your trusted, daily cost proposal and schedule management platform. 
+                Sign up and be first on the waitlist to use ConstructWise as your trusted, daily cost proposal and schedule management platform. 
               </p>
             </div>
             <div className="flex flex-col items-center">
@@ -221,7 +221,7 @@ export default function HomePage() {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Elevate Your Construction Planning Today</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join other innovative construction companies who are leveraging RiskWise&apos;s vertical AI to generate better cost estimates and construction schedules.
+            Join other innovative construction companies who are leveraging ConstructWise&apos;s vertical AI to generate better cost estimates and construction schedules.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             

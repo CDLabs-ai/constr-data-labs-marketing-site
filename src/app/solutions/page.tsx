@@ -21,7 +21,7 @@ export default function SolutionsPage() {
                 Go from unstructured files and takeoffs to comprehensive, detailed cost estimates and Gannt chart schedules in minutes
             </p>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto m-4">
-                When a firm joins RiskWise, we ingest their historical cost proposals, P&Ls, CPM schedules, and unit rates. The AI adapts to their methods &ndash; not the other way around. 
+                When a firm joins ConstructWise, we ingest their historical cost proposals, P&Ls, CPM schedules, and unit rates. The AI adapts to their methods &ndash; not the other way around. 
             </p>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto m-4">
                 So when they upload their data, the system doesn&apos;t spit out generic analysis. It generates a 70%-complete, detailed cost estimate with matching baseline schedule, as if their seasoned estimators had created the draft. Construction teams can then refine it with AI-powered queries, but the baseline already fits their process.
@@ -182,7 +182,7 @@ export default function SolutionsPage() {
                 <div className="md:grid-cols-2 gap-8">
                     <div className="bg-white p-6 rounded-xl shadow-md grid grid-cols-1 md:grid-cols-2">
                         <div className="mx-4 m-15">
-                            <h3 className="text-xl mb-10">&quot;RiskWise offloads so much of the painstaking manual processes anyone could do. It allows us to spend more time to think critically about bidding decisions and quantify how they&apos;ll impact the holistic project.&quot;</h3>
+                            <h3 className="text-xl mb-10">&quot;ConstructWise offloads so much of the painstaking manual processes anyone could do. It allows us to spend more time to think critically about bidding decisions and quantify how they&apos;ll impact the holistic project.&quot;</h3>
                             <p className="font-bold">
                                 Jeremy Hynum
                             </p>
@@ -202,7 +202,7 @@ export default function SolutionsPage() {
             <h2 className="text-4xl font-bold text-white mb-6">Elevate Your Construction Planning Today
 </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join other innovative construction companies who are leveraging RiskWise&apos;s vertical AI to generate better cost estimates and construction schedules.
+                Join other innovative construction companies who are leveraging ConstructWise&apos;s vertical AI to generate better cost estimates and construction schedules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 

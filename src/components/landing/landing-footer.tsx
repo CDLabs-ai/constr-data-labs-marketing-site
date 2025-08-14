@@ -9,7 +9,7 @@ export default function LandingFooter() {
          <div>
            <div className="flex items-center space-x-2 mb-4">
              <ChartColumn className="h-6 w-6 text-blue-400" />
-             <span className="text-xl font-bold">RiskWise</span>
+             <span className="text-xl font-bold">ConstructWise</span>
            </div>
            <p className="text-gray-400">AI-powered construction planning and cost estimation platform.</p>
          </div>
@@ -36,7 +36,7 @@ export default function LandingFooter() {
          </div>
        </div>
        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-         <p>&copy; 2025 RiskWise. All rights reserved.</p>
+         <p>&copy; 2025 ConstructWise. All rights reserved.</p>
        </div>
      </div>
    </footer>   

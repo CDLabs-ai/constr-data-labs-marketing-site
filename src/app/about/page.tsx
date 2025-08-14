@@ -17,7 +17,7 @@ export default function AboutPage() {
                     The Construction Platform to Plan Smarter
                 </h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                    At RiskWise we&apos;re committed to building software for construction professionals. Estimators and schedulers spend dozens of hours a week analyzing files, building Excel models, and entering data one activity at a time — valuable yet manual and time-consuming work that limits your company&apos;s project win rates and profitability.
+                    At ConstructWise we&apos;re committed to building software for construction professionals. Estimators and schedulers spend dozens of hours a week analyzing files, building Excel models, and entering data one activity at a time — valuable yet manual and time-consuming work that limits your company&apos;s project win rates and profitability.
                 </p>
             </div>
         </section>
@@ -36,12 +36,12 @@ export default function AboutPage() {
                             <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
                             
                             <div className="text-xl font-semibold my-2">Developers</div>
-                            <p className="text-gray-600">When you&apos;re developing conceptual budgets for a new development, or you&apos;re in the thick of construction, RiskWise will help you manage your cost basis, track draws with confidence, and deliver projects the way you underwrote them.</p>
+                            <p className="text-gray-600">When you&apos;re developing conceptual budgets for a new development, or you&apos;re in the thick of construction, ConstructWise will help you manage your cost basis, track draws with confidence, and deliver projects the way you underwrote them.</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
                             
                             <div className="text-xl font-semibold my-2">Trade Contractors</div>
-                            <p className="text-gray-600">If you generate repetitive bid estimates or have a detailed menu of items, use Riskwise to review for accuracy, pesky Excel errors, or benchmarking against your own data.</p>
+                            <p className="text-gray-600">If you generate repetitive bid estimates or have a detailed menu of items, use ConstructWise to review for accuracy, pesky Excel errors, or benchmarking against your own data.</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-6">Elevate Your Construction Planning Today</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Join other innovative construction companies who are leveraging RiskWise&apos;s vertical AI to generate better cost estimates and construction schedules.
+                Join other innovative construction companies who are leveraging ConstructWise&apos;s vertical AI to generate better cost estimates and construction schedules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 
