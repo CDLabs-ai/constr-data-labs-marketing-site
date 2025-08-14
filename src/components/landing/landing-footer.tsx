@@ -1,7 +1,12 @@
+"use client"
+import { useState } from "react"
 import { ChartColumn} from "lucide-react"
 import Link from "next/link"
+import { WaitingListModal } from "../waiting-list-modal"
 
 export default function LandingFooter() {
+  const [waitingListOpen, setWaitingListOpen] = useState(false)
+
     return (
      <footer className="bg-gray-900 text-white py-12 px-4">
      <div className="container mx-auto">
@@ -23,9 +28,9 @@ export default function LandingFooter() {
                </Link>
              </li>
              <li>
-               <Link href="" className="hover:text-white">
+               <p onClick={() => setWaitingListOpen(true)} className="hover:text-white hover:cursor-pointer">
                  Contact
-               </Link>
+               </p>
              </li>
              <li>
                <Link href="/solutions" className="hover:text-white">
@@ -39,6 +44,7 @@ export default function LandingFooter() {
          <p>&copy; 2025 ConstructWise. All rights reserved.</p>
        </div>
      </div>
+      <WaitingListModal open={waitingListOpen} onOpenChange={setWaitingListOpen} />
    </footer>   
     )
 }
