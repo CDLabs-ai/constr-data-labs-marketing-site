@@ -2,13 +2,13 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
-import { Mail, User, Building, CheckCircle, Phone } from "lucide-react"
+import { Mail, User, Building, CheckCircle, Phone } from 'lucide-react'
 import { createClient } from "@/lib/supabase/client"
 
 interface WaitingListModalProps {
@@ -24,8 +24,29 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
     company: "",
     phone: "",
   })
+  
+  //  Added ref for phone input to handle cursor positioning
+  const phoneInputRef = useRef<HTMLInputElement>(null)
 
   const supabase = createClient();
+
+  //  Added phone number formatting function
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digits
+    const digits = value.replace(/\D/g, '')
+    
+    // Limit to 10 digits
+    const limitedDigits = digits.slice(0, 10)
+    
+    // Format based on length
+    if (limitedDigits.length <= 3) {
+      return limitedDigits.length > 0 ? `(${limitedDigits}` : ''
+    } else if (limitedDigits.length <= 6) {
+      return `(${limitedDigits.slice(0, 3)})-${limitedDigits.slice(3)}`
+    } else {
+      return `(${limitedDigits.slice(0, 3)})-${limitedDigits.slice(3, 6)}-${limitedDigits.slice(6)}`
+    }
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -53,10 +74,37 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
+    const { name, value } = e.target
+    
+    //  Special handling for phone number formatting
+    if (name === 'phone') {
+      const formattedPhone = formatPhoneNumber(value)
+      setFormData({
+        ...formData,
+        [name]: formattedPhone,
+      })
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      })
+    }
+  }
+
+  //  Added phone input key handler for better backspace behavior
+  const handlePhoneKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Backspace') {
+      const input = e.currentTarget
+      const cursorPosition = input.selectionStart || 0
+      const value = input.value
+      
+      // If cursor is right after a formatting character, move it back
+      if (cursorPosition > 0 && (value[cursorPosition - 1] === ')' || value[cursorPosition - 1] === '-')) {
+        setTimeout(() => {
+          input.setSelectionRange(cursorPosition - 1, cursorPosition - 1)
+        }, 0)
+      }
+    }
   }
 
   if (isSubmitted) {
@@ -143,12 +191,14 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
             <div className="relative">
               <Phone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
               <Input
+                ref={phoneInputRef}
                 id="phone"
                 name="phone"
                 type="text"
-                placeholder="Enter your phone number"
+                placeholder="(___)-___-____"
                 value={formData.phone}
                 onChange={handleInputChange}
+                onKeyDown={handlePhoneKeyDown}
                 className="pl-10"
                 required
               />
