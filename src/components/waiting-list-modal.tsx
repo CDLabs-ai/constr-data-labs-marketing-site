@@ -69,7 +69,7 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
             </div>
             <DialogTitle className="text-2xl font-bold text-gray-900 mb-2">You&apos;re on the list!</DialogTitle>
             <DialogDescription className="text-gray-600">
-              Thanks for joining our waiting list. We&apos;ll notify you as soon as RiskWise is ready for early access.
+              Thanks for joining our waiting list. We&apos;ll notify you as soon as ConstructWise is ready for early access.
             </DialogDescription>
           </div>
         </DialogContent>
@@ -172,7 +172,7 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
         <div className="mt-4 space-y-2 text-sm text-gray-600">
           <div className="flex items-center space-x-2">
             <CheckCircle className="h-4 w-4 text-green-500" />
-            <span>Early access to RiskWise platform</span>
+            <span>Early access to ConstructWise platform</span>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="h-4 w-4 text-green-500" />
