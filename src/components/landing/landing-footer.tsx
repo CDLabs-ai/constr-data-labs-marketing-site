@@ -18,17 +18,17 @@ export default function LandingFooter() {
            <h3 className="font-semibold mb-4">Company</h3>
            <ul className="space-y-2 text-gray-400">
              <li>
-               <Link href="#" className="hover:text-white">
+               <Link href="/about" className="hover:text-white">
                  About
                </Link>
              </li>
              <li>
-               <Link href="#" className="hover:text-white">
+               <Link href="" className="hover:text-white">
                  Contact
                </Link>
              </li>
              <li>
-               <Link href="#" className="hover:text-white">
+               <Link href="/solutions" className="hover:text-white">
                  Support
                </Link>
              </li>

@@ -24,7 +24,10 @@ export default function LandingNav() {
                 About
                 </Link>
             </nav>
-            <Button onClick={() => setWaitingListOpen(true)} className="bg-blue-600 duration-500">
+            <Button
+                onClick={() => setWaitingListOpen(true)}
+                className="bg-blue-600 duration-500 px-3 py-2 text-sm sm:text-base w-auto"
+                >
                 Join the Waiting List
             </Button>
             </div>
