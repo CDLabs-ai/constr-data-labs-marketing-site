@@ -44,7 +44,7 @@ export function WaitingListModal({ open, onOpenChange }: WaitingListModalProps) 
     } else if (limitedDigits.length <= 6) {
       return `(${limitedDigits.slice(0, 3)})-${limitedDigits.slice(3)}`
     } else {
-      return `(${limitedDigits.slice(0, 3)})-${limitedDigits.slice(3, 6)}-${limitedDigits.slice(6)}`
+      return `(${limitedDigits.slice(0, 3)}) ${limitedDigits.slice(3, 6)}-${limitedDigits.slice(6)}`
     }
   }
 
